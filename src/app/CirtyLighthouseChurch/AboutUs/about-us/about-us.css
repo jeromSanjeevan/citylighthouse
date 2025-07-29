@@ -1,0 +1,9 @@
+.about-us-container {
+  min-height: 86vh;
+  padding: 2rem;
+  background: linear-gradient(to bottom right, #f8f9fa, #e9ecef);
+}
+
+.content {
+  max-width: 800px;
+}
