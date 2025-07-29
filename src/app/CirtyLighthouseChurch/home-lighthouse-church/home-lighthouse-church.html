@@ -1,136 +1,86 @@
 <app-navbar-lighthouse-church></app-navbar-lighthouse-church>
 
-<div *ngIf="isLoading" class="loading-overlay">
-  <div class="loading-3d-cube">
-    <div class="front"></div>
-    <div class="back"></div>
-    <div class="right"></div>
-    <div class="left"></div>
-    <div class="top"></div>
-    <div class="bottom"></div>
-  </div>
-</div>
-
-
-<!-- Image Slider / Carousel -->
-<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-
-    <!-- Slide 1 -->
-    <div class="carousel-item active">
-      <img src="HomeSlides/1.jpg" class="d-block w-100" alt="Slide 1">
+<!-- Hero Section with Overlay & Text -->
+<div id="heroCarousel" class="carousel slide position-relative" data-bs-ride="carousel" style="height: 500px; overflow: hidden;">
+  <div class="carousel-inner h-100">
+    <div class="carousel-item active h-100">
+      <img src="HomeSlides/1.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Slide 1" />
+      <div class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+      <div class="carousel-caption d-flex flex-column justify-content-center h-100">
+        <h1 class="display-4 fw-bold text-white text-shadow">Welcome to City Lighthouse Church</h1>
+        <p class="lead text-white text-shadow">A vibrant, Christ-centered community in the heart of Coventry</p>
+        <a href="#get-involved" class="btn btn-primary btn-lg rounded-pill mt-3 shadow-lg">Join Us Today</a>
+      </div>
     </div>
-
-    <!-- Slide 2 -->
-    <div class="carousel-item">
-      <img src="HomeSlides/2.jpg" class="d-block w-100" alt="Slide 2">
-    </div>
-
-    <!-- Slide 3 -->
-    <div class="carousel-item">
-      <img src="HomeSlides/3.jpg" class="d-block w-100" alt="Slide 3">
-    </div>
-
-    <!-- Slide 4 -->
-    <div class="carousel-item">
-      <img src="HomeSlides/4.jpg" class="d-block w-100" alt="Slide 4">
-    </div>
-
-    <!-- Slide 5 -->
-    <div class="carousel-item">
-      <img src="HomeSlides/5.jpg" class="d-block w-100" alt="Slide 5">
-    </div>
-
+    <!-- Add other slides similarly -->
   </div>
 
-  <!-- Controls -->
   <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
+    <span class="carousel-control-prev-icon bg-primary rounded-circle p-3"></span>
   </button>
   <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
+    <span class="carousel-control-next-icon bg-primary rounded-circle p-3"></span>
   </button>
 </div>
 
-<!-- Welcome Section -->
-<div class="py-5" style="background: #f8f9fa;">
-  <div class="text-center">
-    <h2 class="fw-bold mb-4 text-primary">Welcome to the City Lighthouse Church</h2>
-    <p class="lead text-secondary">
-      City Lighthouse Church is a vibrant, Christ-centered community located in the heart of Coventry. Established in 2012,
-      we are committed to shining the light of Jesus in our city and beyond. Whether you're new to faith, seeking a place
-      to grow, or looking for a community to belong to — you are warmly welcome here.
-    </p>
-    <p class="text-muted">
-      Our church is built on strong Biblical teaching, Spirit-filled worship, and genuine fellowship. We believe in the power
-      of prayer, the importance of family, and the calling to serve our neighborhoods with love and compassion.
-    </p>
-    <p class="text-muted">
-      Come and be part of what God is doing at City Lighthouse Church — there's a place for you here!
-    </p>
+<!-- Welcome Section with Soft Background -->
+<section class="py-5 bg-light text-center px-4">
+  <div class="container" style="max-width: 720px;">
+    <h2 class="fw-bold text-primary mb-4">Welcome to the City Lighthouse Church</h2>
+    <p class="lead text-secondary mb-3">City Lighthouse Church is a vibrant, Christ-centered community...</p>
+    <p class="text-muted mb-3">Our church is built on strong Biblical teaching, Spirit-filled worship...</p>
+    <p class="text-muted">Come and be part of what God is doing — there's a place for you!</p>
   </div>
-</div>
+</section>
 
-<!-- Info Cards Section -->
-<div class="container my-5">
-  <div class="row g-4">
-
+<!-- Info Cards with Hover -->
+<section class="container py-5" id="info-cards">
+  <div class="row g-4 justify-content-center">
     <div class="col-md-4">
-      <div class="card h-100 shadow rounded-4 border-0">
-        <div class="card-body text-center info-card">
-          <h5 class="card-title fw-bold text-primary mb-4">Next Upcoming</h5>
-          <p class="card-text text-secondary">
-            Join us for our special Sunday worship on <strong>August 4, 2025 at 10:30 AM</strong> at our main sanctuary.
-          </p>
-          <a href="#" class="btn btn-outline-primary rounded-pill mt-4">View Calendar</a>
+      <div class="card h-100 shadow-sm rounded-4 border-0 info-card-hover">
+        <div class="card-body text-center p-4">
+          <h5 class="card-title text-primary fw-bold mb-3">Next Upcoming</h5>
+          <p class="card-text text-secondary">Join us for our special Sunday worship on <strong>August 4, 2025</strong> at 10:30 AM.</p>
+          <a href="#" class="btn btn-outline-primary rounded-pill mt-3 px-4">View Calendar</a>
         </div>
       </div>
     </div>
-
     <div class="col-md-4">
-      <div class="card h-100 shadow rounded-4 border-0">
-        <div class="card-body text-center info-card">
-          <h5 class="card-title fw-bold text-success mb-4">Service Details</h5>
-          <p class="card-text text-secondary">
-            Sunday Service: 10:30 AM – 12:30 PM <br />
-            Wednesday Bible Study: 7:00 PM – 8:30 PM <br />
-            Venue: Jubilee Crescent, Coventry
-          </p>
-          <a href="#" class="btn btn-outline-success rounded-pill mt-4">More Info</a>
+      <div class="card h-100 shadow-sm rounded-4 border-0 info-card-hover">
+        <div class="card-body text-center p-4">
+          <h5 class="card-title text-success fw-bold mb-3">Service Details</h5>
+          <p class="card-text text-secondary">Sunday Service: 10:30 AM – 12:30 PM <br />Wednesday Bible Study: 7:00 PM – 8:30 PM <br />Venue: Jubilee Crescent</p>
+          <a href="#" class="btn btn-outline-success rounded-pill mt-3 px-4">More Info</a>
         </div>
       </div>
     </div>
-
     <div class="col-md-4">
-      <div class="card h-100 shadow rounded-4 border-0">
-        <div class="card-body text-center info-card">
-          <h5 class="card-title fw-bold text-warning mb-4">Get Involved</h5>
-          <p class="card-text text-secondary">
-            Explore ministry teams, outreach programs, youth groups, and volunteer opportunities at City Lighthouse.
-          </p>
-          <a href="#" class="btn btn-outline-warning rounded-pill mt-4">Join Now</a>
+      <div class="card h-100 shadow-sm rounded-4 border-0 info-card-hover">
+        <div class="card-body text-center p-4">
+          <h5 class="card-title text-warning fw-bold mb-3">Get Involved</h5>
+          <p class="card-text text-secondary">Explore ministry teams, outreach programs, youth groups, and volunteer opportunities.</p>
+          <a href="#" class="btn btn-outline-warning rounded-pill mt-3 px-4">Join Now</a>
         </div>
       </div>
     </div>
-
   </div>
-</div>
+</section>
 
-<div class="container my-5">
-  <h2 class="text-center mb-">Worship & Inspiration Videos</h2>
+<!-- Video Section -->
+<section class="video-section container py-5 bg-white rounded-4 shadow-sm">
+  <h2 class="section-title text-center mb-5">Worship & Inspiration Videos</h2>
   <div class="row g-4">
     <div class="col-md-6 col-lg-3" *ngFor="let video of videoUrls">
-      <div class="ratio ratio-16x9 shadow rounded-3">
-        <iframe
-          [src]="video"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-        </iframe>
+      <div class="video-card p-2 rounded-3 shadow-sm">
+        <div class="video-wrapper ratio ratio-16x9 rounded">
+          <iframe
+            [src]="video"
+            allowfullscreen
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          ></iframe>
+        </div>
       </div>
     </div>
   </div>
-</div>
-
-
-
+</section>
