@@ -1,5 +1,16 @@
 <app-navbar-lighthouse-church></app-navbar-lighthouse-church>
 
+<div *ngIf="isLoading" class="loading-overlay">
+  <div class="loading-3d-cube">
+    <div class="front"></div>
+    <div class="back"></div>
+    <div class="right"></div>
+    <div class="left"></div>
+    <div class="top"></div>
+    <div class="bottom"></div>
+  </div>
+</div>
+
 
 <!-- Image Slider / Carousel -->
 <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
