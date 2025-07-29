@@ -105,3 +105,21 @@
   </div>
 </div>
 
+<div class="container my-5">
+  <h2 class="text-center mb-">Worship & Inspiration Videos</h2>
+  <div class="row g-4">
+    <div class="col-md-6 col-lg-3" *ngFor="let video of videoUrls">
+      <div class="ratio ratio-16x9 shadow rounded-3">
+        <iframe
+          [src]="video"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

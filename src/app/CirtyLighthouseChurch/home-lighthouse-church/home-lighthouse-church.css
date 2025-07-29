@@ -1,6 +1,7 @@
-.carousel{
-    margin-top: 75px;
+.carousel {
+  margin-top: 75px;
 }
+
 .carousel-item img {
   height: 400px;
   object-fit: cover;
@@ -20,8 +21,53 @@
   margin: 0 auto;     /* center horizontally */
 }
 
-
 .info-card:hover {
   transform: scale(1.05);  /* zoom in slightly */
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* subtle shadow on hover */
+}
+
+.video-section {
+  padding: 40px 20px;
+  background: linear-gradient(to right, #f0f4f8, #ffffff);
+  border-radius: 16px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #333;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.video-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.video-wrapper {
+  width: 100%;
+  height: 160px; /* Reduced height for landscape look */
+  position: relative;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 12px;
+}
+
+@media (max-width: 767px) {
+  .video-wrapper {
+    height: 140px;
+  }
 }
