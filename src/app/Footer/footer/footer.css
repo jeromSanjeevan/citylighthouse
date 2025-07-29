@@ -1,0 +1,16 @@
+.footer {
+  background-color: #0b1e39; /* Deep navy blue for contrast */
+  color: #e0f0ff; /* Soft light blue text for readability */
+  font-size: 1rem;
+  padding-top: 20px;
+  padding-bottom: 35px;
+}
+
+.footer .social-icons i {
+  color: #e0f0ff;
+  transition: color 0.3s ease;
+}
+
+.footer .social-icons i:hover {
+  color: #66d9ff; /* Bright sky blue on hover */
+}

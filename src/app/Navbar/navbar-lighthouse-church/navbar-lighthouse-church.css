@@ -1,0 +1,9 @@
+.navbar-brand img {
+  border-radius: 6px;
+  background: white;
+  padding: 2px;
+}
+
+.navbar-dark-navy {
+  background-color: #001f3f; /* dark navy blue */
+}

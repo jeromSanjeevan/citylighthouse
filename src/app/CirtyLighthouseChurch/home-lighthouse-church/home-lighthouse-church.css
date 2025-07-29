@@ -1,0 +1,27 @@
+.carousel{
+    margin-top: 75px;
+}
+.carousel-item img {
+  height: 400px;
+  object-fit: cover;
+}
+
+.container {
+  max-width: 960px;
+}
+
+/* Cards bigger and longer */
+.info-card {
+  min-height: 320px;
+  padding: 2.5rem 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  max-width: 350px;   /* increase max width */
+  margin: 0 auto;     /* center horizontally */
+}
+
+
+.info-card:hover {
+  transform: scale(1.05);  /* zoom in slightly */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* subtle shadow on hover */
+}

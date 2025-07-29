@@ -1,0 +1,56 @@
+<!-- Full-page Flex Wrapper -->
+<div class="d-flex flex-column max-vh-100">
+
+  <!-- Main Landing Content -->
+  <div class="flex-grow-1">
+    <div class="landing-bg text-white d-flex flex-column align-items-center justify-content-center">
+
+      <!-- Church Logo -->
+      <img src="/Logo.png" alt="City Light House Logo" class="mb-4 logo-img" />
+
+      <!-- Welcome Message -->
+      <div class="text-center mb-5">
+        <h1 class="display-4 fw-bold">
+          Welcome to <span class="text-light">City Lighthouse</span>
+        </h1>
+        <p class="lead fw-medium">Shining the Light of Christ into Our Community</p>
+      </div>
+
+      <!-- Option Cards -->
+      <div class="container">
+        <div class="row justify-content-center g-5">
+
+          <!-- Community Group -->
+          <div class="col-md-5">
+            <div class="option-card bg-white text-center text-dark p-4 rounded-4 shadow">
+              <i class="fas fa-users fa-3x mb-3 text-primary"></i>
+              <h2 class="fw-bold mb-2 text-primary">Community Group</h2>
+              <p class="mb-3 text-secondary">Connect, grow, and serve with others during the week.</p>
+              <button class="btn btn-primary btn-lg rounded-pill">
+                <i class="fas fa-user-friends"></i> Join Group
+              </button>
+            </div>
+          </div>
+
+          <!-- Church Services -->
+          <div class="col-md-5 ps" >
+            <div class="option-card church bg-white text-center text-dark p-4 rounded-4 shadow">
+              <i class="fas fa-users fa-3x mb-3 text-success"></i>
+              <h2 class="fw-bold mb-2 text-success">Church Service</h2>
+              <p class="mb-3 text-secondary">Worship with us and experience God’s presence every Sunday.</p>
+              <button class="btn btn-success btn-lg rounded-pill" [routerLink]="['/citylighthouse-home']">
+                <i class="bi bi-bank"></i> Enter Church
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+ 
+
+</div>
