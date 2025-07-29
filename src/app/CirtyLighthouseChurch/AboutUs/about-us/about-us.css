@@ -1,9 +1,23 @@
-.about-us-container {
-  min-height: 86vh;
-  padding: 2rem;
-  background: linear-gradient(to bottom right, #f8f9fa, #e9ecef);
+.container{
+      margin-top: 60px;
+
+}
+.about-section {
+  
+  transition: all 0.3s ease;
+}
+.about-section:hover {
+  background-color: #e9f5ff;
 }
 
-.content {
-  max-width: 800px;
+.info-section h6 {
+  margin-bottom: 0.5rem;
+}
+
+.info-section a {
+  font-size: 0.85rem;
+}
+
+.info-section:hover {
+  background-color: #f8f9fa;
 }
