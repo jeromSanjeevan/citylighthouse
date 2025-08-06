@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, AfterViewInit, Renderer2 } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
@@ -8,26 +8,58 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
   styleUrl: './home-lighthouse-church.css'
 })
 export class HomeLighthouseChurch {
-isLoading = true;  // show spinner initially
 
-  videoUrls: SafeResourceUrl[] = [];
+  constructor(private el: ElementRef, private renderer: Renderer2) {}
+ngAfterViewInit() {
+  const elementsToObserve = this.el.nativeElement.querySelectorAll('.text-content, .image-content, .fade-slide');
 
-  constructor(private sanitizer: DomSanitizer) {
-    // Simulate data loading
-    setTimeout(() => {
-      const urls = [
-        'https://www.youtube.com/embed/Sn9CSxQsyWI',
-        'https://www.youtube.com/embed/PPo1HxlMqIw',
-        'https://www.youtube.com/embed/Tmsx-Boa0jc',
-        'https://www.youtube.com/embed/Xxfej2ullGA',
-      ];
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          this.renderer.addClass(entry.target, 'visible');
+        } else {
+          this.renderer.removeClass(entry.target, 'visible');
+        }
+      });
+    },
+    { threshold: 0.2 }
+  );
 
-      this.videoUrls = urls.map(url =>
-        this.sanitizer.bypassSecurityTrustResourceUrl(url)
-      );
+  elementsToObserve.forEach((el: Element) => observer.observe(el));
+}
 
-      this.isLoading = false;  // hide spinner after loading
-    }, 900); // simulate 1.5 seconds loading delay
+
+  onJoinUs() {
+    window.location.href = '/join-us';
   }
+
+  onWatchLive() {
+    window.open('https://yourchurch.live/stream', '_blank');
+  }
+
+  // SECTION 6
+   videos = [
+    {
+      url: 'https://www.youtube.com/watch?v=VIDEO_ID_1',
+      thumbnail: 'https://img.youtube.com/vi/VIDEO_ID_1/hqdefault.jpg',
+      title: 'Sermon Title 1'
+    },
+    {
+      url: 'https://www.youtube.com/watch?v=VIDEO_ID_2',
+      thumbnail: 'https://img.youtube.com/vi/VIDEO_ID_2/hqdefault.jpg',
+      title: 'Sermon Title 2'
+    },
+    {
+      url: 'https://www.youtube.com/watch?v=VIDEO_ID_3',
+      thumbnail: 'https://img.youtube.com/vi/VIDEO_ID_3/hqdefault.jpg',
+      title: 'Sermon Title 3'
+    },
+    {
+      url: 'https://www.youtube.com/watch?v=VIDEO_ID_4',
+      thumbnail: 'https://img.youtube.com/vi/VIDEO_ID_4/hqdefault.jpg',
+      title: 'Sermon Title 4'
+    }
+  ];
 
 }

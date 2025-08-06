@@ -1,25 +1,47 @@
-<nav class="navbar navbar-expand-lg navbar-dark navbar-dark-navy px-4 fixed-top">
-  <!-- Logo -->
-  <a class="navbar-brand d-flex align-items-center" href="#">
-    <img src="Logo.png" alt="Logo" height="40" class="me-2" />
-    City Lighthouse
-  </a>
-
-  <!-- Mobile Toggle -->
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <!-- Nav Links -->
-  <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-    <ul class="navbar-nav mx-auto">
-      <li class="nav-item"><a class="nav-link active" routerLink="/citylighthouse-home">Home</a></li>
-      <li class="nav-item"><a class="nav-link" routerLink="/about-us">About Us</a></li>
-      <li class="nav-item"><a class="nav-link" routerLink="/new-here">New Here</a></li>
-      <li class="nav-item"><a class="nav-link" routerLink="/get-involved">Get Involved</a></li>
-      <li class="nav-item"><a class="nav-link" routerLink="/get-connected">Get Connected</a></li>
-      <li class="nav-item"><a class="nav-link" routerLink="/giving">Giving</a></li>
-      <li class="nav-item"><a class="nav-link" routerLink="/contact">Contact Us</a></li>
-    </ul>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark-blue shadow-sm py-3">
+  <div class="container">
+    <a class="navbar-brand fw-bold text-white d-flex align-items-center" href="#">
+      <img src="Logo1.png" alt="Community Church Logo" style="height:40px; width:auto; margin-right:10px;">
+     City Lighthouse Church
+    </a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/about">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="ministriesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Ministries
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="ministriesDropdown">
+            <li><a class="dropdown-item" routerLink="/ministries/worship">Worship Ministry</a></li>
+            <li><a class="dropdown-item" routerLink="/ministries/youth">Youth Ministry</a></li>
+            <li><a class="dropdown-item" routerLink="/ministries/outreach">Outreach</a></li>
+            <li><a class="dropdown-item" routerLink="/ministries/children">Children's Ministry</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/sermons">Sermons</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/events">Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/contact">Contact</a>
+        </li>
+        <li class="nav-item ms-2">
+          <a class="btn btn-orange fw-semibold px-4 py-2" routerLink="/give">Give</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>

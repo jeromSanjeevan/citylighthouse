@@ -1,86 +1,279 @@
 <app-navbar-lighthouse-church></app-navbar-lighthouse-church>
 
-<!-- Hero Section with Overlay & Text -->
-<div id="heroCarousel" class="carousel slide position-relative" data-bs-ride="carousel" style="height: 500px; overflow: hidden;">
-  <div class="carousel-inner h-100">
-    <div class="carousel-item active h-100">
-      <img src="HomeSlides/1.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Slide 1" />
-      <div class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
-      <div class="carousel-caption d-flex flex-column justify-content-center h-100">
-        <h1 class="display-4 fw-bold text-white text-shadow">Welcome to City Lighthouse Church</h1>
-        <p class="lead text-white text-shadow">A vibrant, Christ-centered community in the heart of Coventry</p>
-        <a href="#get-involved" class="btn btn-primary btn-lg rounded-pill mt-3 shadow-lg">Join Us Today</a>
-      </div>
-    </div>
-    <!-- Add other slides similarly -->
-  </div>
+<!-- SECTION 1 STARTS HERE -->
+<div class="hero-banner">
+  <!-- Background image element -->
+  <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1470&q=80"
+    alt="Worship Service Background" class="background-image" />
 
-  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon bg-primary rounded-circle p-3"></span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-    <span class="carousel-control-next-icon bg-primary rounded-circle p-3"></span>
-  </button>
+  <div class="overlay"></div>
+
+  <div class="content">
+    <img src="Logo1.png" alt="City Lighthouse Church Logo" class="hero-logo" />
+    <h1 class="church-name">Welcome to City Lighthouse Community Church</h1>
+    <p class="tagline">A Spirit-Filled Community for All Nations</p>
+
+    <!-- Bible Verse -->
+    <p class="hero-verse">
+      “For My house shall be called a house of prayer for all nations.”<br />
+      <span class="verse-ref">— Isaiah 56:7</span>
+    </p>
+
+
+    <div class="cta-buttons">
+      <button class="btn join-us">Join Us on Sunday</button>
+      <button class="btn watch-live">Watch Live</button>
+    </div>
+  </div>
 </div>
 
-<!-- Welcome Section with Soft Background -->
-<section class="py-5 bg-light text-center px-4">
-  <div class="container" style="max-width: 720px;">
-    <h2 class="fw-bold text-primary mb-4">Welcome to the City Lighthouse Church</h2>
-    <p class="lead text-secondary mb-3">City Lighthouse Church is a vibrant, Christ-centered community...</p>
-    <p class="text-muted mb-3">Our church is built on strong Biblical teaching, Spirit-filled worship...</p>
-    <p class="text-muted">Come and be part of what God is doing — there's a place for you!</p>
-  </div>
-</section>
 
-<!-- Info Cards with Hover -->
-<section class="container py-5" id="info-cards">
-  <div class="row g-4 justify-content-center">
-    <div class="col-md-4">
-      <div class="card h-100 shadow-sm rounded-4 border-0 info-card-hover">
-        <div class="card-body text-center p-4">
-          <h5 class="card-title text-primary fw-bold mb-3">Next Upcoming</h5>
-          <p class="card-text text-secondary">Join us for our special Sunday worship on <strong>August 4, 2025</strong> at 10:30 AM.</p>
-          <a href="#" class="btn btn-outline-primary rounded-pill mt-3 px-4">View Calendar</a>
-        </div>
-      </div>
+
+<!-- SECTION 1 ENDS HERE -->
+
+
+<!-- SECTION 2 STARTS HERE -->
+
+<section class="welcome-section Section_BG_1">
+  <div class="container flex-layout">
+    <div class="text-content">
+      <h3>Welcome to City Lighthouse Church</h3>
+      <p class="welcome-text">
+        “We warmly invite you to join us as we grow in the Spirit and walk boldly in the power of Pentecost.<br /><br />
+        ‘But you will receive power when the Holy Spirit comes on you; and you will be my witnesses…’ <em>— Acts
+          1:8</em><br /><br />
+        Come and experience the fire of the Holy Spirit and the love of Jesus Christ within our community.”
+      </p>
+
+      <p class="pastor-signature">— Pastor Jonathan Dhaya</p>
     </div>
-    <div class="col-md-4">
-      <div class="card h-100 shadow-sm rounded-4 border-0 info-card-hover">
-        <div class="card-body text-center p-4">
-          <h5 class="card-title text-success fw-bold mb-3">Service Details</h5>
-          <p class="card-text text-secondary">Sunday Service: 10:30 AM – 12:30 PM <br />Wednesday Bible Study: 7:00 PM – 8:30 PM <br />Venue: Jubilee Crescent</p>
-          <a href="#" class="btn btn-outline-success rounded-pill mt-3 px-4">More Info</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card h-100 shadow-sm rounded-4 border-0 info-card-hover">
-        <div class="card-body text-center p-4">
-          <h5 class="card-title text-warning fw-bold mb-3">Get Involved</h5>
-          <p class="card-text text-secondary">Explore ministry teams, outreach programs, youth groups, and volunteer opportunities.</p>
-          <a href="#" class="btn btn-outline-warning rounded-pill mt-3 px-4">Join Now</a>
-        </div>
-      </div>
+    <div class="image-content">
+      <img
+        src="https://images.unsplash.com/photo-1520532141146-da0ff89cae4b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Church community" />
     </div>
   </div>
 </section>
 
-<!-- Video Section -->
-<section class="video-section container py-5 bg-white rounded-4 shadow-sm">
-  <h2 class="section-title text-center mb-5">Worship & Inspiration Videos</h2>
-  <div class="row g-4">
-    <div class="col-md-6 col-lg-3" *ngFor="let video of videoUrls">
-      <div class="video-card p-2 rounded-3 shadow-sm">
-        <div class="video-wrapper ratio ratio-16x9 rounded">
-          <iframe
-            [src]="video"
-            allowfullscreen
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          ></iframe>
+
+<!-- SECTION 2 ENDS HERE -->
+
+<!-- SECTION 3 STARTS HERE -->
+<section class="about-us-preview">
+  <div class="about-us-container">
+    <div class="about-image fade-slide">
+      <img
+        src="https://images.unsplash.com/photo-1511795557538-2d6300331e2d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Church building">
+
+    </div>
+    <div class="about-content fade-slide">
+      <h2>About Us</h2>
+      <p class="about-description">
+
+
+        City Lighthouse Community Church is a vibrant Pentecostal Christian church established in 2022, serving the
+        Tamil-speaking community from all nations. Our mission is to spread the love of Jesus Christ and empower
+        believers through the infilling and guidance of the Holy Spirit.
+
+        As a welcoming family rooted in biblical truth, we focus on nurturing faith, hope, and joyful service in every
+        member. We celebrate the Pentecostal experience of spiritual gifts, prayer, and revival, equipping individuals
+        to live victorious Christian lives and impact their communities.
+
+        Whether you are new to faith or looking for a spirit-filled church home, City Lighthouse Community Church
+        invites you to grow in the grace and power of God with us.
+
+        <a href="/about-us" class="btn about-link" role="button" aria-label="Learn More About Us">
+          Learn More
+        </a>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 3 ENDS HERE -->
+
+<!-- SECTION 4 STARTS HERE -->
+<section class="service-times-clean py-5 text-white fade-slide" id="serviceSection">
+  <div class="container-fluid px-4 fade-slide">
+    <div class="row g-0">
+
+      <!-- Service Times Card -->
+      <div class="col-md-4">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <!-- Front -->
+            <div class="flip-card-front col_1">
+              <i class="fas fa-clock fa-5x" aria-hidden="true"></i>
+              <h3>Service Times</h3>
+            </div>
+
+            <!-- Back -->
+            <div class="flip-card-back col_1">
+              <h3>Service Times Details</h3>
+              <ul>
+                <li><i class="fas fa-check-circle me-2"></i>Sunday Tamil Service: 3:00 PM – 5:00 PM</li>
+                <li><i class="fas fa-check-circle me-2"></i>Bible Study Online: Thursday 7:30 PM (Zoom)</li>
+              </ul>
+              <p><em>Zoom link and QR code will be added here.</em></p>
+            </div>
+          </div>
         </div>
+      </div>
+
+      <!-- Zoom Meeting Card -->
+      <div class="col-md-4">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <!-- Front -->
+            <div class="flip-card-front col_2">
+              <i class="fas fa-video fa-5x" aria-hidden="true"></i>
+              <h3>Zoom Bible Study</h3>
+            </div>
+
+            <!-- Back -->
+            <div class="flip-card-back col_2">
+              <h3>Join Zoom Meeting</h3>
+              <p>Join our online Bible Study every <strong>Thursday at 7:30 PM</strong>.</p>
+              <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://zoom.us/j/1234567890"
+                alt="Zoom QR Code" class="mb-3 rounded" />
+              <a href="https://zoom.us/j/1234567890" target="_blank" class="btn btn-light text-orange fw-semibold px-4">
+                Join Zoom Meeting
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Location & Contact Card -->
+      <div class="col-md-4">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <!-- Front -->
+            <div class="flip-card-front col_3">
+              <i class="fas fa-map-marker-alt fa-5x" aria-hidden="true"></i>
+              <h3>Location & Contact</h3>
+            </div>
+
+            <!-- Back -->
+            <div class="flip-card-back col_3">
+              <h3>Contact Info</h3>
+              <p><strong>City Lighthouse Church</strong></p>
+              <p>Jubilee Cres, Radford, CV6 3EX Coventry, UK</p>
+              <p>Phone: 07903 192718</p>
+              <p>Email: <a href="mailto:admin@citylighthouse.org"
+                  class="text-white text-decoration-underline">admin@citylighthouse.org</a></p>
+              <a href="https://maps.google.com?q=Jubilee+Cres,+Radford,+CV6+3EX,+Coventry,+United+Kingdom"
+                target="_blank" class="btn btn-outline-light mt-3 px-4 fw-semibold">Get Directions</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- FontAwesome CDN for icons -->
+
+
+
+<!-- SECTION 4 ENDS HERE -->
+
+<section class="ministries-section">
+  <div class="container fade-slide">
+    <h2>Our Ministries</h2>
+    <div class="ministries-grid">
+      <a href="/ministries/worship" class="ministry-card fade-in" aria-label="Worship Ministry">
+        <img src="https://img.icons8.com/ios-filled/100/ff6b35/musical-notes.png" alt="Worship Icon" />
+        <h3>Worship Ministry</h3>
+        <p>Leading heartfelt praise and worship to glorify God.</p>
+      </a>
+
+      <a href="/ministries/youth" class="ministry-card fade-in" aria-label="Youth Ministry">
+        <img src="https://img.icons8.com/ios-filled/100/ff6b35/people.png" alt="Youth Icon" />
+        <h3>Youth Ministry</h3>
+        <p>Empowering the next generation to live boldly in faith.</p>
+      </a>
+
+      <a href="/ministries/outreach" class="ministry-card fade-in" aria-label="Outreach Ministry">
+        <img src="https://img.icons8.com/ios-filled/100/ff6b35/handshake.png" alt="Outreach Icon" />
+        <h3>Outreach Ministry</h3>
+        <p>Serving the community and sharing the gospel with love.</p>
+      </a>
+
+      <a href="/ministries/children" class="ministry-card fade-in" aria-label="Children’s Ministry">
+        <img src="https://img.icons8.com/ios-filled/100/ff6b35/kids.png" alt="Children Icon" />
+        <h3>Children’s Ministry</h3>
+        <p>Nurturing faith and fun for our youngest believers.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- SECTION 5 ENDS HERE -->
+
+<!-- SECTION 6 STARTS HERE -->
+
+
+<section class="latest-sermon-section">
+  <div class="container">
+    <h2>Latest Sermon / Livestream</h2>
+
+    <div class="main-video">
+      <iframe width="100%" height="400" src="https://www.youtube.com/embed/YOUR_MAIN_VIDEO_ID"
+        title="Latest Sermon Video" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <div class="video-thumbnails">
+      <div class="thumbnail" *ngFor="let video of videos">
+        <a [href]="video.url" target="_blank" rel="noopener">
+          <img [src]="video.thumbnail" [alt]="video.title" />
+          <p>{{ video.title }}</p>
+        </a>
       </div>
     </div>
   </div>
 </section>
+
+<!-- SECTION 6 ENDS HERE -->
+
+<!--  #region SECTION 7 -->
+<section class="upcoming-events Section_BG_2" #eventsSection>
+  <div class="container">
+    <h2 class="fade-slide">Upcoming Events</h2>
+
+    <div class="events-wrapper fade-slide">
+      <!-- Event Item -->
+      <div class="event-item">
+        <h3>Prayer Night</h3>
+        <p class="event-date">Friday, August 23, 2025</p>
+        <p class="event-desc">Join us for an evening of worship and intercessory prayer as we seek God together.</p>
+      </div>
+
+      <div class="event-item">
+        <h3>Worship Encounter</h3>
+        <p class="event-date">Sunday, September 1, 2025</p>
+        <p class="event-desc">An uplifting time of worship with guest speakers and live music.</p>
+      </div>
+
+      <div class="event-item">
+        <h3>Community Outreach</h3>
+        <p class="event-date">Saturday, September 14, 2025</p>
+        <p class="event-desc">Serving our local community through food distribution and gospel sharing.</p>
+      </div>
+    </div>
+
+    <div class="events-button-wrapper fade-slide">
+      <a href="/events" class="btn events-btn">View All Events</a>
+    </div>
+  </div>
+</section>
+
+<!-- #endregion SECTION 7 -->

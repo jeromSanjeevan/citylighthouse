@@ -8,6 +8,7 @@ import { Footer } from './Footer/footer/footer';
 import { HomeLighthouseChurch } from './CirtyLighthouseChurch/home-lighthouse-church/home-lighthouse-church';
 import { NavbarLighthouseChurch } from './Navbar/navbar-lighthouse-church/navbar-lighthouse-church';
 import { AboutUs } from './CirtyLighthouseChurch/AboutUs/about-us/about-us';
+import { FaithStatment } from './CirtyLighthouseChurch/AboutUs/faith-statment/faith-statment';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AboutUs } from './CirtyLighthouseChurch/AboutUs/about-us/about-us';
     Footer,
     HomeLighthouseChurch,
     NavbarLighthouseChurch,
-    AboutUs
+    AboutUs,
+    FaithStatment
   ],
   imports: [
     BrowserModule,

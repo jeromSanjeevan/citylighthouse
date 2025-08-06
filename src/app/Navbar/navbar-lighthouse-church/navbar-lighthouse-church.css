@@ -1,9 +1,50 @@
-.navbar-brand img {
-  border-radius: 6px;
-  background: white;
-  padding: 2px;
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+
 }
 
-.navbar-dark-navy {
-  background-color: #001f3f; /* dark navy blue */
+/* Theme colors */
+.bg-dark-blue {
+  background-color: #102a43;
+}
+
+.btn-orange {
+  background-color: #ff6b35;
+  color: #fff;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-orange:hover,
+.btn-orange:focus {
+  background-color: #ff844e;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 107, 53, 0.5);
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff !important;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  margin-right: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: #ff6b35 !important;
+}
+
+.dropdown-menu {
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+}
+
+.dropdown-item:hover {
+  background-color: #f7f7f7;
+  color: #ff6b35;
 }

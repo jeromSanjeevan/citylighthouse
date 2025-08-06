@@ -1,14 +1,14 @@
 /* Background with radiant gradient */
 .landing-bg {
-  background: linear-gradient(to bottom right, #004085, #1e90ff, #4dd0e1);
+  background: linear-gradient(to bottom right, #61a1e6, #08090a, #2705be);
   padding: 50px 30px;
-  min-height: 90vh;
+  min-height: 0vh;
 }
 
 /* Logo styling */
 .logo-img {
-  max-height: 180px;
-  background: white;
+  max-height: 280px;
+  /* background: rgb(253, 252, 252); */
   border-radius: 20px;
   padding: 10px;
 }
@@ -16,7 +16,7 @@
 /* Text glow effect for "City Lighthouse" */
 .text-glow {
   color: #ffffff;
-  text-shadow: 0 0 10px #add8e6, 0 0 20px #00cfff;
+  text-shadow: 0 0 0px #add8e6, 0 0 5px #edf3f5;
 }
 
 /* Card hover animation */
