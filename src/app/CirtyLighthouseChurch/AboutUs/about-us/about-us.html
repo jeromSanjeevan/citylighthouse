@@ -1,52 +1,76 @@
 <app-navbar-lighthouse-church></app-navbar-lighthouse-church>
 
 
-<div class="who-we-are-header">
-  <h1 class="who-we-are-title">Who We Are</h1>
-</div>
 
 
-<div class="section  text-light">
-  <div class="about-container">
-  <div class="about-row">
-    <div *ngFor="let section of sections" class="about-col">
-      <a [routerLink]="section.link" class="no-underline">
-        <div class="about-card" [ngClass]="section.colorClass">
-          <div class="card-body">
-            <div class="icon-wrapper">
-              <i class="fa-solid" [ngClass]="section.icon"></i>
-            </div>
-            <h5 class="card-title">{{ section.title }}</h5>
-            <p class="card-text">{{ section.snippet }}</p>
-            <span class="learn-more">Learn More <i class="fa-solid fa-arrow-right"></i></span>
-          </div>
-        </div>
-      </a>
-    </div>
+<section class="about-intro">
+  <h1>About City Lighthouse Church</h1>
+  <p>
+    City Lighthouse Community Church is a vibrant Pentecostal church established in 2022, serving the Tamil-speaking
+    community worldwide. Rooted in the power of the Gospel and led by the Holy Spirit, we are a family united by faith
+    and love.
+  </p>
+
+  <p>
+    Our mission is to glorify God by spreading Jesus’ love and empowering believers through Spirit baptism, prayer,
+    worship, and spiritual gifts.
+  </p>
+
+  <p>
+    We believe everyone is uniquely created by God and called to walk in purpose. Whether exploring faith or looking for
+    a church family, you are welcome here.
+  </p>
+
+  <h2>Our Commitments</h2>
+  <ul class="commitments-list">
+    <li><i class="fas fa-bullhorn"></i> Proclaiming the Gospel boldly</li>
+    <li><i class="fas fa-users"></i> Raising disciples who walk in holiness and love</li>
+    <li><i class="fas fa-praying-hands"></i> Encouraging growth through prayer and fellowship</li>
+    <li><i class="fas fa-home"></i> Supporting families and the next generation</li>
+    <li><i class="fas fa-hands-helping"></i> Reaching the lost with compassion</li>
+  </ul>
+
+  <p>
+    Join us for joyful worship, heartfelt prayer, and Bible-based preaching that addresses real life. Encounter God’s
+    presence and grow in His grace and power.
+  </p>
+
+</section>
+
+<hr class="section-breaker" />
+<section class="about-cards">
+  <div class="card" routerLink="/about/who-we-are"
+    style="background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80');">
+    <div class="overlay"></div>
+    <h3>Who We Are</h3>
+    <p>Learn the story, vision, and mission of City Lighthouse Community Church.</p>
   </div>
-</div>
 
-<div class="dynamic-banner">
-  <img src="BG_2.jpg" alt="Banner" class="banner-img" />
-  <div class="banner-overlay">
-    <blockquote class="banner-verse">
-      “For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life.”
-      <span class="verse-ref">(John 3:16)</span>
-    </blockquote>
-
-    <div class="banner-buttons">
-      <a routerLink="/join" class="btn-banner btn-primary-banner">Join Us</a>
-      <a routerLink="/about" class="btn-banner btn-secondary-banner">Learn More</a>
-    </div>
+  <div class="card" routerLink="/about/beliefs"
+    style="background-image: url('https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?auto=format&fit=crop&w=800&q=80');">
+    <div class="overlay"></div>
+    <h3>Our Beliefs</h3>
+    <p>Discover the biblical truths and Pentecostal foundations that guide our church.</p>
   </div>
-</div>
 
+  <div class="card" routerLink="/about/leadership"
+    style="background-image: url('https://images.unsplash.com/photo-1529257414776-6f3d4a94f6aa?auto=format&fit=crop&w=800&q=80');">
+    <div class="overlay"></div>
+    <h3>Our Leadership</h3>
+    <p>Meet the pastors and leaders who serve and shepherd our church family.</p>
+  </div>
 
+  <div class="card" routerLink="/about/ministries"
+    style="background-image: url('https://images.unsplash.com/photo-1486308510493-cb6f0db5d3a4?auto=format&fit=crop&w=800&q=80');">
+    <div class="overlay"></div>
+    <h3>Our Ministries</h3>
+    <p>Explore our various ministries designed to nurture every age and walk of life.</p>
+  </div>
 
-
-
-</div>
- 
-
-  
-
+  <div class="card" routerLink="/about/plan-visit"
+    style="background-image: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80');">
+    <div class="overlay"></div>
+    <h3>Plan Your Visit</h3>
+    <p>New here? Find all the information you need before attending a service.</p>
+  </div>
+</section>

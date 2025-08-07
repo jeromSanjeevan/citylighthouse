@@ -1,52 +1,231 @@
-/* Background with radiant gradient */
-.landing-bg {
-  background: linear-gradient(to bottom right, #61a1e6, #08090a, #2705be);
-  padding: 50px 30px;
-  min-height: 0vh;
+/* #region Hero Banner Starts  Here */
+#hero-carousel {
+  height: 380px;
+  overflow: hidden;
+  margin-bottom: 6px;
 }
 
-/* Logo styling */
-.logo-img {
-  max-height: 280px;
-  /* background: rgb(253, 252, 252); */
-  border-radius: 20px;
-  padding: 10px;
+.hero-slide {
+  position: relative;
+  height: 380px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Text glow effect for "City Lighthouse" */
-.text-glow {
-  color: #ffffff;
-  text-shadow: 0 0 0px #add8e6, 0 0 5px #edf3f5;
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
 }
 
-/* Card hover animation */
-.option-card {
-  background-color: #ffffff;  /* default white background */
-  color: #333333;             /* default dark text */
-  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-}
-.option-card:hover {
-  background-color: #222222;  /* dark background on hover */
-  color: #f0f0f0;             /* light text on hover */
-  transform: translateY(-8px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+.hero-caption {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+  max-width: 800px;
 }
 
-/* Make sure icons also change color on hover */
-.option-card:hover i {
-  color: #f0f0f0;
-  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.7));
-}
-/* Buttons inside the card should invert colors on hover */
-.option-card:hover .btn {
-  background-color: #444444 !important;  /* slightly lighter dark */
-  color: #ffffff !important;
-  border-color: #666666 !important;
+.hero-logo {
+  max-height: 120px;
+  border-radius: 10px;
 }
 
-/* Responsive spacing */
+.hero-title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.hero-verse {
+  font-size: 1.1rem;
+  color: #f8f9fa;
+  font-weight: 400;
+}
+
+/* Mobile adjustments */
 @media (max-width: 768px) {
-  .option-card {
-    margin-bottom: 30px;
+  .hero-slide {
+    height: 500px;
+  }
+
+  .hero-title {
+    font-size: 1.6rem;
+  }
+
+  .hero-verse {
+    font-size: 1rem;
+  }
+
+  .hero-logo {
+    max-height: 80px;
   }
 }
+
+
+/* #endregion Hero Banner Ends  Here */
+
+/* #region Section 2 Starts  Here */
+
+.custom-section .col1 {
+  position: relative;
+  background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80'); /* Image 1 */
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+  color: white;
+
+}
+.custom-section .col1::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(30, 30, 60, 0.3); /* soft dark blue overlay, adjust opacity */
+  z-index: 0;
+}
+
+.custom-section .col1 .content-wrapper {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.25); /* mild overlay inside */
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 100%;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-section .col1:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.custom-section .col1:hover::before {
+  background-color: rgba(30, 30, 60, 0.45); /* darken overlay on hover */
+}
+
+.custom-section .col1:hover .content-wrapper {
+  background-color: rgba(0, 0, 0, 0.45);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Different image and overlay for col2 */
+.custom-section .col2 {
+  position: relative;
+  background-image: url('https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=800&q=80'); /* Image 2 */
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.custom-section .col2::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(50, 20, 20, 0.25); /* soft reddish overlay, adjust opacity */
+  z-index: 0;
+}
+
+.custom-section .col2 .content-wrapper {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.25);
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 100%;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-section .col2:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.custom-section .col2:hover::before {
+  background-color: rgba(50, 20, 20, 0.45); /* darken overlay on hover */
+}
+
+.custom-section .col2:hover .content-wrapper {
+  background-color: rgba(0, 0, 0, 0.45);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* #region Mobile responsiveness for Hero and Custom Section */
+@media (max-width: 768px) {
+  /* Hero adjustments */
+  #hero-carousel {
+    height: 500px; /* taller on mobile for better display */
+  }
+
+  .hero-slide {
+    height: 500px;
+  }
+
+  .hero-title {
+    font-size: 1.6rem;
+    padding: 0 10px; /* some horizontal padding */
+  }
+
+  .hero-verse {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .hero-logo {
+    max-height: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Hide background images and overlays */
+
+  .row{
+    margin:10px;
+  }
+  .custom-section .col1,
+  .custom-section .col2 {
+    margin-bottom: 10px;
+    border-radius: 20px;
+
+    height: auto !important;       /* let height auto-adjust */
+    padding: 10px 15px;            /* add some padding around */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Show only content wrapper with full width */
+  .custom-section .col1 .content-wrapper,
+  .custom-section .col2 .content-wrapper {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 20px;
+    border-radius: 12px;
+
+    box-sizing: border-box;
+    box-shadow: none; /* you can keep or remove */
+  }
+}
+
+/* #endregion Mobile responsiveness */
+
+/* #endregion Section 2 Ends  Here */

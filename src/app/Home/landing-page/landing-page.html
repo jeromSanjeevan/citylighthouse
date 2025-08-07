@@ -1,52 +1,81 @@
-<!-- Full-page Flex Wrapper -->
-<div class="d-flex flex-column bg-light">
+<section id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+  <div class="carousel-inner">
 
-  <!-- Main Landing Content -->
-  <div class="flex-grow-1">
-    <div class="landing-bg text-white d-flex flex-column align-items-center justify-content-center text-center">
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+      <div class="hero-slide"
+        style="background-image: url('https://images.unsplash.com/photo-1466278313810-9aca9abea861?q=80&w=1297&auto=format&fit=crop&ixlib=rb-4.1.0');">
+        <div class="overlay"></div>
+        <ng-container *ngTemplateOutlet="caption"></ng-container>
+      </div>
+    </div>
 
-      <!-- Church Logo -->
-      <img src="Logo1.png" alt="City Lighthouse Logo" class="mb-4 logo-img shadow-lg" />
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+      <div class="hero-slide"
+        style="background-image: url('https://images.unsplash.com/photo-1482178116735-0d7fc4305875?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0');">
+        <div class="overlay"></div>
+        <ng-container *ngTemplateOutlet="caption"></ng-container>
+      </div>
+    </div>
 
-      <!-- Welcome Message -->
-      <div class="mb-5">
-        <h1 class="display-4 fw-bold">
-          <span class="text-glow"> Welcome to City Lighthouse</span>
-        </h1>
-        <p class="lead fw-medium">Shining the Light of Christ into Our Community</p>
+    <!-- Slide 3 -->
+    <div class="carousel-item">
+      <div class="hero-slide"
+        style="background-image: url('https://images.unsplash.com/photo-1522679056866-8dbbc8774a9d?q=80&w=1247&auto=format&fit=crop&ixlib=rb-4.1.0');">
+        <div class="overlay"></div>
+        <ng-container *ngTemplateOutlet="caption"></ng-container>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Shared caption template -->
+  <ng-template #caption>
+    <div class="hero-caption text-center text-white">
+      <img src="Logo1.png" alt="City Lighthouse Logo" class="hero-logo mb-3" />
+      <h1 class="hero-title">Welcome to City Lighthouse</h1>
+      <p class="hero-verse mt-2">
+        "Your word is a lamp to my feet and a light to my path."<br>
+        <small>- Psalm 119:105</small>
+      </p>
+      <a href="#join" class="btn btn-warning text-dark rounded-pill px-4 py-2 mt-3">Join Us</a>
+    </div>
+  </ng-template>
+</section>
+
+<!-- ********************************************************** -->
+
+<section class="custom-section">
+  <div class="container-fluid px-0">
+    <div class="row gx-0">
+
+      <div class="col-md-6 col1">
+        <div class="content-wrapper text-white text-center px-2">
+          <i class="fas fa-users fa-3x mb-3"></i>
+          <h2>Community Embrace</h2>
+          <p>Connect, grow, and serve with others during the week.</p>
+          <button class="btn btn-warning rounded-pill px-4 py-2 mb-3">Join Group</button>
+          <p class="bible-verse mt-4">"For where two or three gather in my name, there am I with them." <br><small>-
+              Matthew 18:20</small></p>
+        </div>
       </div>
 
-      <!-- Option Cards -->
-      <div class="container">
-        <div class="row justify-content-center g-5">
-
-          <!-- Community Group -->
-          <div class="col-md-5">
-            <div class="option-card bg-white text-center text-dark p-4 rounded-4 shadow-lg border-start border-5 border-primary h-100">
-              <i class="fas fa-hands-helping fa-3x mb-3 text-primary"></i>
-              <h2 class="fw-bold mb-2 text-primary">Community Embrace</h2>
-              <p class="mb-3 text-secondary">Connect, grow, and serve with others during the week.</p>
-              <button class="btn btn-outline-primary btn-lg rounded-pill px-4">
-                <i class="fas fa-users"></i> Join Group
-              </button>
-            </div>
-          </div>
-
-          <!-- Church Services -->
-          <div class="col-md-5">
-            <div class="option-card church bg-white text-center text-dark p-4 rounded-4 shadow-lg border-start border-5 border-success h-100">
-              <i class="fas fa-church fa-3x mb-3 text-success"></i>
-              <h2 class="fw-bold mb-2 text-success">Community Church</h2>
-              <p class="mb-3 text-secondary">Worship with us and experience God’s presence every Sunday.</p>
-              <button class="btn btn-outline-success btn-lg rounded-pill px-4" [routerLink]="['/citylighthouse-home']">
-                <i class="bi bi-bank"></i> Enter Church
-              </button>
-            </div>
-          </div>
-
+      <div class="col-md-6 col2">
+        <div class="content-wrapper text-white text-center px-2">
+          <i class="fas fa-church fa-3x mb-3"></i>
+          <h2>Community Church</h2>
+          <p>Worship with us and experience God’s presence every Sunday.</p>
+          <button class="btn btn-light text-dark rounded-pill px-4 mt-3" [routerLink]="['/citylighthouse-home']">
+            <i class="fas fa-church me-2"></i>Enter Church
+          </button>
+          <p class="bible-verse mt-4">“Let everything that has breath praise the Lord!”
+            <br><small>-
+              Psalm 150:6</small>
+          </p>
         </div>
       </div>
 
     </div>
   </div>
-</div>
+</section>

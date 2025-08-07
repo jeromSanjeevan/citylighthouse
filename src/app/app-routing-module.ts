@@ -8,7 +8,7 @@ import { FaithStatment } from './CirtyLighthouseChurch/AboutUs/faith-statment/fa
 const routes: Routes = [
   { path: '', component: LandingPage }, // Load on root path
   { path: 'citylighthouse-home', component: HomeLighthouseChurch },
-    { path: 'about-us', component: AboutUs },
+    { path: 'citylighthouse-home/about-us', component: AboutUs },
         { path: 'faith-statment', component: FaithStatment },
 ];
 
