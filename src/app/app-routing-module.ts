@@ -17,7 +17,12 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { scrollPositionRestoration: 'enabled' })],
+  imports: [
+    RouterModule.forRoot(routes, {
+      scrollPositionRestoration: 'enabled',
+      useHash: true // 👈 This completely fixes the GitHub Pages direct link/refresh 404 error!
+    })
+  ],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
