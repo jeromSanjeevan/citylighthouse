@@ -11,6 +11,8 @@ import { CommunityEmbrace } from './pages/community-embrace/community-embrace';
 import { Contact } from './pages/contact/contact';
 import { HomeSlider } from './components/home-slider/home-slider';
 import { Leadership } from './pages/leadership/leadership';
+import { PrivacyPolicy } from './pages/privacy-policy/privacy-policy';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -23,8 +25,9 @@ import { Leadership } from './pages/leadership/leadership';
     Contact,
     HomeSlider,
     Leadership,
+    PrivacyPolicy,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule,RouterModule],
   providers: [provideBrowserGlobalErrorListeners()],
   bootstrap: [App],
 })

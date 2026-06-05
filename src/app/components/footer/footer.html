@@ -1,36 +1,31 @@
 <footer class="premium-footer border-top border-dark text-start">
   <div class="container py-5">
     <div class="row g-4 justify-content-between">
-      
+
       <!-- Column 1: About & New Social Links -->
       <div class="col-lg-4">
         <h4 class="footer-title mb-3">CITY LIGHTHOUSE</h4>
         <p class="footer-prose mb-4">
-          An independent Pentecostal tracking environment serving Coventry through corporate truth frameworks and intentional house fellowship integration blocks.
+          An independent Pentecostal tracking environment serving Coventry through corporate truth frameworks and
+          intentional house fellowship integration blocks.
         </p>
-        
+
         <!-- Social Media Links Integrated Here -->
         <div class="footer-social-wrapper">
           <p class="footer-subheading mb-2" style="font-size: 0.65rem; color: #64748b;">Connect Globally</p>
           <div class="d-flex gap-3 align-items-center">
-            
+
             <!-- Active Channel: Facebook -->
-            <a href="https://www.facebook.com/YOUR_CHURCH_PAGE" 
-               target="_blank" 
-               rel="noopener noreferrer" 
-               class="social-luxury-icon-link" 
-               title="Follow City Lighthouse on Facebook">
+            <a href="https://www.facebook.com/YOUR_CHURCH_PAGE" target="_blank" rel="noopener noreferrer"
+              class="social-luxury-icon-link" title="Follow City Lighthouse on Facebook">
               <i class="fab fa-facebook-f"></i>
             </a>
 
             <!-- 
             ==========================================================================
             FUTURE SOCIAL CHANNELS PLACEHOLDERS
-            To activate these channels, uncomment the code blocks below and replace 
-            the placeholder links with your official profile URLs.
             ==========================================================================
             -->
-
             <!-- 
             <a href="https://www.instagram.com/YOUR_CHURCH_HANDLE" 
                target="_blank" 
@@ -41,26 +36,25 @@
             </a>
             -->
 
-            <!-- 
-            <a href="https://www.youtube.com/@YOUR_CHURCH_CHANNEL" 
-               target="_blank" 
-               rel="noopener noreferrer" 
-               class="social-luxury-icon-link" 
-               title="Subscribe to City Lighthouse on YouTube">
-              <i class="fab fa-youtube"></i>
-            </a>
-            -->
-
           </div>
         </div>
       </div>
 
-      <!-- Column 2: Environments Links -->
+      <!-- Column 2: Environments & Legal Links (Clean & Nested Safely) -->
+      <!-- Column 2: Environments & Legal Links (Clean & Nested Safely) -->
       <div class="col-md-3 col-sm-6">
         <h6 class="footer-subheading mb-3">Environments</h6>
-        <ul class="list-unstyled d-flex flex-column gap-2">
+        <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
           <li><a routerLink="/community-church" class="footer-link text-decoration-none">Community Church</a></li>
           <li><a routerLink="/community-embrace" class="footer-link text-decoration-none">Community Embrace</a></li>
+
+          <!-- FIXED: Removed opacity mask and forced text to stand out against the background -->
+          <li class="mt-2 pt-2 border-top border-dark">
+            <a routerLink="/privacy"
+              class="footer-link text-decoration-none text-light opacity-50 text-uppercase tracking-wide"
+              style="font-size: 0.65rem;">Privacy Policy</a>
+          </li>
+
         </ul>
       </div>
 

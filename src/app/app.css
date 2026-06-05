@@ -1,0 +1,44 @@
+/* --- Cookie Consent Banner Layout --- */
+.cookie-consent-banner {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  right: 24px;
+  z-index: 9999;
+  background-color: rgba(11, 12, 16, 0.95) !important; /* Premium ultra-dark glassmorphism */
+  backdrop-filter: blur(12px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Max width parameters for editorial text styling */
+.max-banner-width {
+  max-width: 550px;
+}
+
+/* Custom premium button mapping */
+.btn-champagne-gold {
+  background-color: var(--clc-champagne, #e6c687) !important;
+  color: #07090e !important;
+  border: 1px solid var(--clc-champagne, #e6c687) !important;
+  font-size: 0.7rem !important;
+  letter-spacing: 1px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.btn-champagne-gold:hover {
+  background-color: transparent !important;
+  color: var(--clc-champagne, #e6c687) !important;
+  transform: translateY(-2px);
+}
+
+/* Simple keyframe slide up animation */
+.entry-motion-card {
+  animation: slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}

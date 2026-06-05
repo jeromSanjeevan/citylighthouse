@@ -3,3 +3,28 @@
 <router-outlet></router-outlet>
 
 <app-footer></app-footer>
+
+<div *ngIf="!hasAcceptedCookies" class="cookie-consent-banner border border-dark rounded p-4 entry-motion-card">
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
+        <div class="text-start max-banner-width">
+            <div class="editorial-badge mb-2">
+                <span class="gold-line"></span>
+                <span class="badge-text" style="font-size: 0.6rem;">Privacy Architecture</span>
+            </div>
+            <h5 class="text-white font-display fs-6 mb-1">Cookie Compliance Framework</h5>
+            <p class="text-slate-subtle fs-xs mb-0 lh-base">
+                City Lighthouse uses minimalist digital cookies to optimize user interactions and ensure compliance
+                variables under UK GDPR standards. By continuing to navigate this environment, you consent to our core
+                system logic.
+            </p>
+        </div>
+        <div class="d-flex gap-2 align-self-end align-self-md-center">
+            <a routerLink="/privacy"
+                class="btn btn-link text-slate-subtle fs-xs text-decoration-none hover-gold px-2">View Policy</a>
+            <button (click)="acceptCookies()"
+                class="btn btn-champagne-gold btn-sm uppercase-tracking fw-bold px-3 py-2">
+                Accept Framework
+            </button>
+        </div>
+    </div>
+</div>

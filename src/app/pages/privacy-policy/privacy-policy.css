@@ -1,0 +1,24 @@
+/* --- Premium Privacy Link Styling --- */
+
+/* Targets our updated small uppercase link entry */
+.premium-footer .text-light.opacity-50 {
+  color: #94a3b8 !important; /* Premium slate-gray default */
+  opacity: 0.65 !important;
+  font-weight: 600;
+  letter-spacing: 0.08em; /* Clean editorial letter spacing */
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  display: inline-block;
+  position: relative;
+}
+
+/* Luxury Interactive Hover Animation Matrix */
+.premium-footer .text-light.opacity-50:hover {
+  color: var(--clc-champagne, #e6c687) !important; /* Snaps to champagne gold */
+  opacity: 1 !important;
+  transform: translateX(3px); /* Subtle premium layout shift forward */
+}
+
+/* Left alignment accent separator accentuating the text boundary */
+.premium-footer .border-top.border-dark {
+  border-color: rgba(255, 255, 255, 0.05) !important; /* Clean premium high-end divider line */
+}

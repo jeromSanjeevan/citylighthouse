@@ -5,6 +5,7 @@ import { CommunityChurch } from './pages/community-church/community-church';
 import { CommunityEmbrace } from './pages/community-embrace/community-embrace';
 import { Contact } from './pages/contact/contact';
 import { Leadership } from './pages/leadership/leadership';
+import { PrivacyPolicy } from './pages/privacy-policy/privacy-policy';
 
 const routes: Routes = [
   { path: '', component: Home },
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'community-embrace', component: CommunityEmbrace },
   { path: 'our-Leadership', component: Leadership },
   { path: 'contact', component: Contact },
+  { path: 'privacy', component: PrivacyPolicy },
   // Safety net: redirects any unknown paths back to the home landing page
   { path: '**', redirectTo: '' }
 ];
