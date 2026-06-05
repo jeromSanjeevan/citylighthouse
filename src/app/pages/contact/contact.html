@@ -81,23 +81,39 @@
           <div class="bg-midnight p-4 p-md-5 border border-dark rounded">
             <h4 class="text-white font-display mb-4 fs-5">Send a Direct Administrative Notice</h4>
 
-            <form>
+            <!-- Active Web3Forms API Form Wrapper -->
+            <form action="https://api.web3forms.com/submit" method="POST">
+              
+              <!-- Required Secret Authorization Access Key -->
+              <input type="hidden" name="access_key" value="3384dcf3-6a64-4ef2-9bef-55a52f58d2a6">
+              
+              <!-- Form Customizations -->
+              <input type="hidden" name="subject" value="New Administrative Notice from City Lighthouse Website">
+              <input type="hidden" name="redirect" value="https://jeromSanjeevan.github.io/citylighthouse/">
+              
+              <!-- Honeypot Anti-Spam Protection Field (Hidden from human visitors) -->
+              <input type="checkbox" name="botcheck" class="d-none" style="display: none;">
+
+              <!-- Input Name -->
               <div class="mb-4">
                 <label class="form-label text-slate uppercase-tracking fs-xs mb-2">Full Name</label>
-                <input type="text" class="form-control luxury-input" placeholder="Your full name" required>
+                <input type="text" name="name" class="form-control luxury-input" placeholder="Your full name" required>
               </div>
 
+              <!-- Input Email -->
               <div class="mb-4">
                 <label class="form-label text-slate uppercase-tracking fs-xs mb-2">Email Address</label>
-                <input type="email" class="form-control luxury-input" placeholder="name@domain.com" required>
+                <input type="email" name="email" class="form-control luxury-input" placeholder="name@domain.com" required>
               </div>
 
+              <!-- Input Message -->
               <div class="mb-4">
                 <label class="form-label text-slate uppercase-tracking fs-xs mb-2">Message</label>
-                <textarea class="form-control luxury-input" rows="5"
+                <textarea name="message" class="form-control luxury-input" rows="5"
                   placeholder="Type your notification description here..." required></textarea>
               </div>
 
+              <!-- Submit Trigger Button -->
               <button type="submit" class="btn btn-premium-gold w-100 py-3 uppercase-tracking fw-bold">
                 <i class="fas fa-paper-plane me-2 fs-xs"></i> Dispatch Notice
               </button>

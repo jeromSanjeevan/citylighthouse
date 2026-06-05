@@ -18,18 +18,18 @@ interface Slide {
 export class HomeSlider {
   slides: Slide[] = [
     {
-      image: '/images/hero/lighthouse2.png',
+      image: 'images/hero/lighthouse2.png',
       tag: 'Coventry Independent Pentecostal Ministry',
       heading: 'One Church. Two Spiritual',
       italicWord: 'Environments.',
       subtext: 'A community balancing deliberate biblical corporate spaces with rich, organic neighborhood accountability cells.'
     },
     {
-      image: '/images/hero/lighthouse1.jpg',
+      image: 'images/hero/lighthouse1.jpg',
       tag: 'Apostolic Foundations & Sincere Worship',
       heading: 'Uncompromising Truth. Prophetic',
       italicWord: 'Atmosphere.',
-      subtext: 'Join us every Sunday at 10:30 AM to experience transformational scriptural alignment and real relational warmth.'
+      subtext: 'Join us every Sunday at 3:00 PM to experience transformational scriptural alignment and real relational warmth.'
     }
   ];
 }

@@ -38,3 +38,26 @@
 .tracking-wide {
   letter-spacing: 1px;
 }
+
+/* --- Added Social Icon Styles --- */
+.social-luxury-icon-link {
+  width: 36px;
+  height: 36px;
+  background-color: rgba(230, 198, 135, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.social-luxury-icon-link:hover {
+  background-color: var(--clc-champagne, #e6c687);
+  color: #0b0c10;
+  border-color: var(--clc-champagne, #e6c687);
+  transform: translateY(-2px);
+}
