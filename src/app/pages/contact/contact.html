@@ -76,68 +76,48 @@
           </div>
         </div>
 
-        <!-- Right Side: Form Registry Container -->
+        <!-- Right Side: Form Registry -->
         <div class="col-lg-7">
-          <div class="bg-midnight p-4 p-md-5 border border-dark rounded position-relative overflow-hidden">
+          <div class="bg-midnight p-4 p-md-5 border border-dark rounded">
+            <h4 class="text-white font-display mb-4 fs-5">Send a Direct Administrative Notice</h4>
 
-            <!-- State A: Show this premium card only AFTER successful dispatch -->
-            <div *ngIf="isSubmitted" class="text-center py-5 entry-motion-card">
-              <div class="success-icon-frame mx-auto mb-4">
-                <i class="fas fa-check"></i>
+            <!-- Active Web3Forms API Form Wrapper -->
+            <form action="https://api.web3forms.com/submit" method="POST">
+              
+              <!-- Required Secret Authorization Access Key -->
+              <input type="hidden" name="access_key" value="3384dcf3-6a64-4ef2-9bef-55a52f58d2a6">
+              
+              <!-- Form Customizations -->
+              <input type="hidden" name="subject" value="New Administrative Notice from City Lighthouse Website">
+              <input type="hidden" name="redirect" value="https://jeromSanjeevan.github.io/citylighthouse/">
+              
+              <!-- Honeypot Anti-Spam Protection Field (Hidden from human visitors) -->
+              <input type="checkbox" name="botcheck" class="d-none" style="display: none;">
+
+              <!-- Input Name -->
+              <div class="mb-4">
+                <label class="form-label text-slate uppercase-tracking fs-xs mb-2">Full Name</label>
+                <input type="text" name="name" class="form-control luxury-input" placeholder="Your full name" required>
               </div>
-              <h4 class="text-white font-display mb-3 fs-4">Notice Dispatched Successfully</h4>
-              <p class="text-slate fs-sm max-content-width mx-auto mb-0" style="max-width: 420px; line-height: 1.7;">
-                Thank you. Our administrative desk has securely received your submission and will review your request
-                details shortly.
-              </p>
-            </div>
 
-            <!-- State B: Show the Form registry normally; hides automatically on success -->
-            <div *ngIf="!isSubmitted">
-              <h4 class="text-white font-display mb-4 fs-5">Send a Direct Administrative Notice</h4>
+              <!-- Input Email -->
+              <div class="mb-4">
+                <label class="form-label text-slate uppercase-tracking fs-xs mb-2">Email Address</label>
+                <input type="email" name="email" class="form-control luxury-input" placeholder="name@domain.com" required>
+              </div>
 
-              <form (submit)="handleFormSubmit($event)">
-                <!-- Required Secret Authorization Access Key -->
-                <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+              <!-- Input Message -->
+              <div class="mb-4">
+                <label class="form-label text-slate uppercase-tracking fs-xs mb-2">Message</label>
+                <textarea name="message" class="form-control luxury-input" rows="5"
+                  placeholder="Type your notification description here..." required></textarea>
+              </div>
 
-                <!-- Anti-Spam HoneyPot -->
-                <input type="checkbox" name="botcheck" class="d-none" style="display: none;">
-
-                <!-- Input Name -->
-                <div class="mb-4">
-                  <label class="form-label text-slate uppercase-tracking fs-xs mb-2">Full Name</label>
-                  <input type="text" name="name" class="form-control luxury-input" placeholder="Your full name" required
-                    [disabled]="isSubmitting">
-                </div>
-
-                <!-- Input Email -->
-                <div class="mb-4">
-                  <label class="form-label text-slate uppercase-tracking fs-xs mb-2">Email Address</label>
-                  <input type="email" name="email" class="form-control luxury-input" placeholder="name@domain.com"
-                    required [disabled]="isSubmitting">
-                </div>
-
-                <!-- Input Message -->
-                <div class="mb-4">
-                  <label class="form-label text-slate uppercase-tracking fs-xs mb-2">Message</label>
-                  <textarea name="message" class="form-control luxury-input" rows="5"
-                    placeholder="Type your notification description here..." required
-                    [disabled]="isSubmitting"></textarea>
-                </div>
-
-                <!-- Submit Button changes state dynamically when loading -->
-                <button type="submit" class="btn btn-premium-gold w-100 py-3 uppercase-tracking fw-bold"
-                  [disabled]="isSubmitting">
-                  <span *ngIf="!isSubmitting">
-                    <i class="fas fa-paper-plane me-2 fs-xs"></i> Dispatch Notice
-                  </span>
-                  <span *ngIf="isSubmitting">
-                    <i class="fas fa-spinner fa-spin me-2 fs-xs"></i> Processing Connection...
-                  </span>
-                </button>
-              </form>
-            </div>
-
+              <!-- Submit Trigger Button -->
+              <button type="submit" class="btn btn-premium-gold w-100 py-3 uppercase-tracking fw-bold">
+                <i class="fas fa-paper-plane me-2 fs-xs"></i> Dispatch Notice
+              </button>
+            </form>
           </div>
         </div>
 
