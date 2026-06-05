@@ -8,13 +8,13 @@ import { CommonModule } from '@angular/common'; // Required for *ngIf to work
   standalone: false
 })
 export class Contact {
-  // Track submission state
+  // Explicit tracking properties exposed directly to our template view
   isSubmitted = false;
   isSubmitting = false;
 
   async handleFormSubmit(event: Event) {
-    event.preventDefault(); // Stop the page from redirecting
-    
+    event.preventDefault(); // Intercept form submission and prevent a full browser redirect
+
     if (this.isSubmitting) return;
     this.isSubmitting = true;
 
@@ -31,7 +31,7 @@ export class Contact {
 
       if (data.success) {
         this.isSubmitted = true;
-        form.reset(); // Clear the input boxes
+        form.reset(); // Safely scrub raw input data out of form elements
       } else {
         alert('Something went wrong. Please try emailing admin@citylighthouse.org directly.');
       }
