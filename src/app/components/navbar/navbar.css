@@ -1,0 +1,131 @@
+/* Premium Glassmorphism Navigation Canvas Wrapper */
+
+/* Precise layout parameters for your new logo container */
+.brand-logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-logo-asset {
+  height: 42px;
+  /* Standard premium height configuration */
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Elegant micro-interaction on brand hover */
+.navbar-brand:hover .nav-logo-asset {
+  transform: scale(1.04);
+}
+
+.premium-nav-blur {
+  background-color: rgba(10, 13, 20, 0.94) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding-top: 0.9rem;
+  padding-bottom: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+/* Brand Identity Typography Styling with Integrated Lighthouse Lockup */
+.brand-monogram {
+  width: 36px;
+  height: 36px;
+  background-color: var(--clc-champagne);
+  color: #0A0D14;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  box-shadow: 0 0 15px rgba(230, 198, 135, 0.15);
+}
+
+.lighthouse-icon {
+  font-size: 1.15rem;
+  color: #0A0D14;
+}
+
+.brand-text {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #ffffff;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.brand-subtext {
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--clc-champagne);
+  opacity: 0.9;
+}
+
+/* Nav Item Structural Layout Links */
+.nav-link {
+  color: #94a3b8 !important;
+  font-size: 0.72rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 2px !important;
+  text-transform: uppercase;
+  padding: 0.5rem 0;
+  position: relative;
+  transition: color 0.25s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--clc-champagne) !important;
+}
+
+/* Active Highlight Underline Tracker on desktop viewports */
+@media (min-width: 1200px) {
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--clc-champagne);
+    transition: width 0.25s ease;
+  }
+
+  .nav-link.active::after,
+  .nav-link:hover::after {
+    width: 100%;
+  }
+}
+
+/* Contact Us Button Accent Interface Block */
+.btn-nav-cta {
+  background-color: transparent;
+  border: 1px solid var(--clc-champagne);
+  color: var(--clc-champagne);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 0.65rem 1.5rem;
+  border-radius: 0;
+  transition: all 0.3s ease;
+}
+
+.btn-nav-cta:hover {
+  background-color: var(--clc-champagne);
+  color: #0A0D14;
+}
+
+.text-uppercase-tracking {
+  letter-spacing: 2px;
+}
+
+.champagne-italic-text {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--clc-champagne);
+}

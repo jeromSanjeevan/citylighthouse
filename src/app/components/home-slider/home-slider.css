@@ -1,0 +1,116 @@
+.slider-viewport {
+    height: clamp(600px, 85vh, 800px);
+    background-color: var(--clc-obsidian);
+}
+
+.luxury-bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center 30%;
+    transform: scale(1.03);
+    animation: slowZoom 14s infinite linear alternate;
+}
+
+@keyframes slowZoom {
+    0% {
+        transform: scale(1.02);
+    }
+
+    100% {
+        transform: scale(1.06);
+    }
+}
+
+/* Rich linear overlay that transitions background perfectly into velvet obsidian */
+.luxury-scrim {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right,
+            rgba(10, 13, 20, 0.96) 0%,
+            rgba(16, 22, 34, 0.8) 50%,
+            rgba(10, 13, 20, 0.4) 100%);
+}
+
+.dynamic-caption {
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    padding: 0 !important;
+}
+
+.editorial-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.gold-line {
+    width: 30px;
+    height: 1px;
+    background-color: var(--clc-champagne);
+}
+
+.badge-text {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--clc-champagne);
+}
+
+.editorial-title {
+    font-size: clamp(2.4rem, 5vw, 4.2rem);
+    font-weight: 500;
+    color: #ffffff;
+    line-height: 1.15;
+}
+
+.champagne-italic-text {
+    font-style: italic;
+    font-weight: 400;
+    color: var(--clc-champagne);
+    font-family: var(--font-display);
+}
+
+.editorial-prose {
+    font-size: clamp(1rem, 1.3vw, 1.2rem);
+    color: #94a3b8;
+    line-height: 1.7;
+}
+
+.premium-indicators button {
+    width: 35px;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    margin: 0 6px;
+    transition: all 0.3s ease;
+}
+
+.premium-indicators .active {
+    background-color: var(--clc-champagne) !important;
+    width: 60px;
+}
+
+.carousel-item.active .entry-motion-card {
+    animation: luxuryReveal 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes luxuryReveal {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

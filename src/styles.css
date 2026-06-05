@@ -1,1 +1,63 @@
-/* You can add global styles to this file, and also import other style files */
+/* Import a premium serif font for headers and clean geometric font for prose */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+  --clc-obsidian: #0A0D14;      /* Deep Velvet Obsidian Background */
+  --clc-midnight: #111622;      /* Rich Card Canvas Level */
+  --clc-champagne: #E6C687;     /* Brushed Warm Champagne Accent */
+  --clc-champagne-dim: #C5A86B; /* Muted Luxurious Accent Gold */
+  --clc-alabaster: #F8FAFC;     /* Crisp High-Contrast Light Accent */
+  --clc-slate: #64748B;         /* Editorial Body Text Color */
+  
+  --font-display: 'Cinzel', serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background-color: var(--clc-obsidian);
+  color: var(--clc-alabaster);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Global Typography Structural Enforcements */
+h1, h2, h3, .font-display {
+  font-family: var(--font-display);
+  letter-spacing: 1px;
+}
+
+/* Premium Custom Buttons for Global Use */
+.btn-premium-gold {
+  background: linear-gradient(135deg, var(--clc-champagne) 0%, var(--clc-champagne-dim) 100%);
+  color: #0A0D14 !important;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-size: 0.82rem;
+  padding: 0.8rem 2rem;
+  border-radius: 4px;
+  border: none;
+  transition: all 0.3s ease;
+}
+.btn-premium-gold:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(230, 198, 135, 0.25);
+}
+
+.btn-premium-outline {
+  background: transparent;
+  color: var(--clc-champagne) !important;
+  border: 1px solid rgba(230, 198, 135, 0.4);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-size: 0.82rem;
+  padding: 0.75rem 2rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+.btn-premium-outline:hover {
+  border-color: var(--clc-champagne);
+  background: rgba(230, 198, 135, 0.05);
+}

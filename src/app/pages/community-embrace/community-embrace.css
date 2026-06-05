@@ -1,0 +1,202 @@
+/* ==========================================================================
+   COMMUNITY EMBRACE PAGE STYLES
+   ========================================================================== */
+
+:root {
+    --clc-obsidian: #0b0c10;
+    --clc-midnight: #1f2833;
+    --clc-slate: #c5a059;
+    /* Placeholder if custom palette is used, adjust as needed */
+    --clc-champagne: #e6c687;
+    --clc-gold: #c5a059;
+}
+
+/* --- Text & Custom Typography Utilities --- */
+.text-champagne {
+    color: var(--clc-champagne) !important;
+}
+
+.text-slate {
+    color: #94a3b8 !important;
+    /* Soft slate gray for editorial readability */
+}
+
+.bg-obsidian {
+    background-color: var(--clc-obsidian) !important;
+}
+
+.bg-midnight {
+    background-color: #12131c !important;
+    /* Premium deep midnight shade */
+}
+
+.font-display {
+    font-family: "Cinzel", "Playfair Display", Georgia, serif;
+    /* Luxury display font stack */
+}
+
+.champagne-italic-text {
+    font-family: "Playfair Display", Georgia, italic, serif;
+    font-style: italic;
+    color: var(--clc-champagne);
+}
+
+.uppercase-tracking {
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-size: 0.75rem;
+}
+
+/* --- Hero Canvas Layout --- */
+.interior-hero-canvas {
+    min-height: 45vh;
+    background-color: #050508;
+}
+
+.luxury-interior-bg.embrace-bg-blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/hero/lighthouse1.jpg');
+    /* Replace with your asset path */
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px) brightness(0.4);
+    transform: scale(1.05);
+    /* Prevents white edges from the CSS blur filter */
+    z-index: 0;
+}
+
+.luxury-scrim {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(11, 12, 16, 0.4) 0%, rgba(11, 12, 16, 0.95) 100%);
+    z-index: 1;
+}
+
+/* --- Editorial Layout Badges & Details --- */
+.editorial-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.gold-line {
+    display: inline-block;
+    width: 24px;
+    height: 1px;
+    background-color: var(--clc-gold);
+}
+
+.badge-text {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--clc-champagne);
+}
+
+.interior-main-title {
+    font-family: "Cinzel", serif;
+    font-size: calc(2rem + 1.5vw);
+    font-weight: 400;
+    color: #ffffff;
+    letter-spacing: -0.02em;
+}
+
+.interior-subtitle {
+    color: #94a3b8;
+    font-size: 1.05rem;
+    line-height: 1.65;
+}
+
+/* --- Maximum Content Bounds for Readability --- */
+.max-content-width {
+    max-width: 1140px;
+}
+
+/* --- Grid Value Cards --- */
+.border-gold {
+    border-color: var(--clc-gold) !important;
+}
+
+/* --- Premium Banner & Button Interface --- */
+.premium-integration-banner {
+    background-color: #0f1016;
+    border-color: rgba(230, 198, 135, 0.1) !important;
+    /* Soft gold border tint */
+}
+
+.btn-premium-gold {
+    background-color: transparent;
+    color: var(--clc-champagne);
+    border: 1px solid var(--clc-gold);
+    border-radius: 0;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-premium-gold:hover {
+    background-color: var(--clc-gold);
+    color: var(--clc-obsidian);
+    box-shadow: 0 4px 20px rgba(197, 160, 89, 0.15);
+}
+
+/* --- Developmental / Coming Soon Pulse System --- */
+.developmental-badge {
+    background-color: rgba(230, 198, 135, 0.06);
+    padding: 6px 14px;
+    border-radius: 100px;
+    /* Capsule pill layout */
+    color: var(--clc-champagne);
+    border: 1px solid rgba(230, 198, 135, 0.1);
+}
+
+.developmental-dot {
+    width: 6px;
+    height: 6px;
+    background-color: #f59e0b;
+    /* Warm administrative alert tone */
+    border-radius: 50%;
+    display: inline-block;
+    animation: structural-pulse 2.5s infinite ease-in-out;
+}
+
+@keyframes structural-pulse {
+    0% {
+        transform: scale(0.85);
+        opacity: 0.4;
+        box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.2);
+    }
+
+    50% {
+        transform: scale(1.15);
+        opacity: 1;
+        box-shadow: 0 0 8px 2px rgba(245, 158, 11, 0.4);
+    }
+
+    100% {
+        transform: scale(0.85);
+        opacity: 0.4;
+        box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.2);
+    }
+}
+
+/* --- Helper Utilities for Layout Spacing --- */
+.py-6 {
+    padding-top: 4.5rem !important;
+    padding-bottom: 4.5rem !important;
+}
+
+.py-7 {
+    padding-top: 6rem !important;
+    padding-bottom: 6rem !important;
+}
+
+/* --- Clean Z-Indexing Container Rules --- */
+.z-index-2 {
+    z-index: 2;
+}

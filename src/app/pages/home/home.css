@@ -1,0 +1,154 @@
+.py-6 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.mb-6 {
+  margin-bottom: 6rem;
+}
+
+.max-blueprint-width {
+  max-width: 960px;
+}
+
+.text-champagne {
+  color: var(--clc-champagne);
+}
+
+.text-slate {
+  color: #94a3b8;
+}
+
+.bg-midnight {
+  background-color: var(--clc-midnight);
+}
+
+.border-gold {
+  border-color: var(--clc-champagne) !important;
+}
+
+.uppercase-tracking {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+.editorial-section-title {
+  font-size: clamp(1.8rem, 3.2vw, 2.8rem);
+  font-weight: 500;
+  color: #ffffff;
+}
+
+/* Luxurious Architecture Content Panel Cards */
+.luxury-architecture-card {
+  background-color: var(--clc-midnight) !important;
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+  border-radius: 0px !important;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.luxury-architecture-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--clc-champagne) !important;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4) !important;
+}
+
+.architecture-tag {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 0.35rem 0.9rem;
+  border-left: 2px solid #ffffff;
+}
+
+.architecture-tag.tag-champagne {
+  color: var(--clc-champagne);
+  background: rgba(230, 198, 135, 0.05);
+  border-left-color: var(--clc-champagne);
+}
+
+.architecture-heading {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.architecture-desc {
+  color: #94a3b8;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+/* Luxury Ribbon Bar Component */
+.premium-info-ribbon {
+  background-color: var(--clc-midnight);
+  border: 1px solid rgba(230, 198, 135, 0.15);
+  border-radius: 0px;
+}
+
+.ribbon-unit {
+  font-size: 0.88rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: var(--clc-alabaster);
+}
+
+.text-gold {
+  color: var(--clc-champagne);
+}
+
+.ribbon-divider {
+  width: 1px;
+  height: 20px;
+  background-color: rgba(230, 198, 135, 0.2);
+}
+
+/* Pillar Content Matrix Layout elements */
+.pillar-box {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.pillar-num {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--clc-champagne);
+  font-weight: 500;
+}
+
+.decorative-accent-quote {
+  background: rgba(230, 198, 135, 0.02);
+}
+
+/* Premium Bottom Callout Structural Container */
+.premium-cta-banner {
+  background: linear-gradient(135deg, var(--clc-midnight) 0%, #0c101a 100%);
+}
+
+.banner-glow-effect {
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(230, 198, 135, 0.04) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.fs-xs {
+  font-size: 0.75rem;
+}
+
+.fs-sm {
+  font-size: 0.88rem;
+}
+
+.z-index-2 {
+  position: relative;
+  z-index: 2;
+}

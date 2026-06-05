@@ -1,0 +1,302 @@
+.interior-hero-canvas {
+  height: 380px;
+  background-color: var(--clc-obsidian);
+}
+
+.luxury-interior-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center 30%;
+}
+
+.church-bg-blur {
+  background-image: url('https://gstatic1.promeai.pro/gallery/publish/2024/10/25/e97ac3c2ded94af3bfb38f18619470ca.jpg');
+}
+
+.luxury-scrim {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #0A0D14 100%, rgba(10, 13, 20, 0.85) 50%, rgba(10, 13, 20, 0.5) 100%);
+}
+
+.editorial-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.gold-line {
+  width: 30px;
+  height: 1px;
+  background-color: var(--clc-champagne);
+}
+
+.badge-text {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--clc-champagne);
+}
+
+.interior-main-title {
+  font-size: clamp(2.5rem, 4vw, 3.8rem);
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.champagne-italic-text {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--clc-champagne);
+  font-family: var(--font-display);
+}
+
+.interior-subtitle {
+  color: #94a3b8;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.py-6 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.mb-6 {
+  margin-bottom: 6rem;
+}
+
+.max-content-width {
+  max-width: 1050px;
+}
+
+.text-champagne {
+  color: var(--clc-champagne);
+}
+
+.text-slate {
+  color: #94a3b8;
+}
+
+.uppercase-tracking {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+.editorial-section-title {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.language-alert-card {
+  background-color: rgba(230, 198, 135, 0.04);
+  border: 1px solid rgba(230, 198, 135, 0.15);
+}
+
+/* Service Sequence Tracker Cards */
+.liturgy-track-card {
+  background-color: var(--clc-midnight);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  transition: border-color 0.3s ease;
+}
+
+.liturgy-track-card:hover {
+  border-color: rgba(230, 198, 135, 0.2);
+}
+
+.track-time-badge {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--clc-champagne);
+  border-right: 1px solid rgba(230, 198, 135, 0.15);
+  padding-right: 1.2rem;
+  display: flex;
+  align-items: center;
+  min-width: 45px;
+}
+
+.premium-service-card {
+  background-color: var(--clc-midnight);
+}
+
+.bg-midnight {
+  background-color: #0c101a !important;
+}
+
+.text-gold {
+  color: var(--clc-champagne);
+}
+
+.fs-xs {
+  font-size: 0.75rem;
+}
+
+.fs-sm {
+  font-size: 0.88rem;
+}
+
+.z-index-2 {
+  position: relative;
+  z-index: 2;
+}
+
+/* Special Monthly Milestones Cards */
+.special-milestone-card {
+  background-color: #0c101a;
+  border-color: rgba(255, 255, 255, 0.03) !important;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.special-milestone-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(230, 198, 135, 0.15) !important;
+}
+
+.milestone-icon-wrapper {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(230, 198, 135, 0.05);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-outline-champagne-sm {
+  color: var(--clc-champagne);
+  border: 1px solid rgba(230, 198, 135, 0.3);
+  background-color: transparent;
+  border-radius: 2px;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+.btn-outline-champagne-sm:hover {
+  background-color: var(--clc-champagne);
+  color: #0A0D14;
+  border-color: var(--clc-champagne);
+}
+
+/* Mid-Week Calendar Block Structures */
+.live-badge {
+  background-color: rgba(230, 198, 135, 0.08);
+  padding: 4px 10px;
+  border-radius: 2px;
+  color: var(--clc-champagne);
+}
+
+.live-dot {
+  width: 6px;
+  height: 6px;
+  background-color: #10b981;
+  border-radius: 50%;
+  display: inline-block;
+  animation: pulse-glow 2s infinite;
+}
+
+.calendar-event-card {
+  background-color: #070a0f;
+  transition: border-color 0.3s ease;
+}
+
+.calendar-event-card:hover {
+  border-color: rgba(230, 198, 135, 0.15) !important;
+}
+
+@media (min-width: 576px) {
+  .border-end-sm {
+    border-right: 1px solid rgba(255, 255, 255, 0.1) !important;
+  }
+}
+
+.bg-gold-subtle {
+  background-color: rgba(230, 198, 135, 0.08) !important;
+}
+
+/* In-Content Imagery Graphic Architecture */
+.frame-border {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.image-gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(10, 13, 20, 0.8), transparent);
+}
+
+.zoom-access-panel {
+  background-color: #0d121d;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+@keyframes pulse-glow {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.6;
+  }
+
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(0.9);
+    opacity: 0.6;
+  }
+}
+
+/* Sticky Quick Nav Styles */
+.sticky-quick-nav {
+  position: sticky;
+  top: 0;
+  /* Adjust this top value matching your structural site header height offset if required */
+  z-index: 99;
+  background-color: rgba(10, 13, 20, 0.9);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.quick-nav-link {
+  color: #94a3b8;
+  background: transparent;
+  border: none;
+  font-weight: 600;
+  box-shadow: none !important;
+  transition: color 0.25s ease, background-color 0.25s ease;
+  border-radius: 2px;
+}
+
+.quick-nav-link:hover,
+.quick-nav-link:focus {
+  color: var(--clc-champagne);
+  background-color: rgba(230, 198, 135, 0.05);
+}
+
+.scroll-margin-top {
+  scroll-margin-top: 70px;
+  /* Aligns content spacing cleanly under sticky bar on scroll */
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

@@ -1,0 +1,189 @@
+/* ==========================================================================
+   LEADERSHIP PAGE STYLES
+   ========================================================================== */
+
+:root {
+    --clc-obsidian: #0b0c10;
+    --clc-midnight: #12131c;
+    /* Deep luxury dark background shade */
+    --clc-champagne: #e6c687;
+    --clc-gold: #c5a059;
+    --clc-slate: #94a3b8;
+}
+
+/* --- Base & Typographic Settings --- */
+.text-champagne {
+    color: var(--clc-champagne) !important;
+}
+
+.text-slate {
+    color: var(--clc-slate) !important;
+}
+
+.bg-obsidian {
+    background-color: var(--clc-obsidian) !important;
+}
+
+.bg-midnight {
+    background-color: var(--clc-midnight) !important;
+}
+
+.font-display {
+    font-family: "Cinzel", "Playfair Display", Georgia, serif;
+}
+
+.champagne-italic-text {
+    font-family: "Playfair Display", Georgia, italic, serif;
+    font-style: italic;
+    color: var(--clc-champagne);
+}
+
+.uppercase-tracking {
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-size: 0.72rem;
+}
+
+/* --- Hero Layout & Image Positioning --- */
+.interior-hero-canvas {
+    min-height: 45vh;
+    background-color: #050508;
+}
+
+.luxury-interior-bg.leadership-bg-blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-image: url('assets/images/leadership-hero-placeholder.jpg'); */
+    /* Replace with your path later */
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px) brightness(0.35);
+    transform: scale(1.05);
+    z-index: 0;
+}
+
+.luxury-scrim {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(11, 12, 16, 0.4) 0%, rgba(11, 12, 16, 0.95) 100%);
+    z-index: 1;
+}
+
+/* --- Badges --- */
+.editorial-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.gold-line {
+    display: inline-block;
+    width: 24px;
+    height: 1px;
+    background-color: var(--clc-gold);
+}
+
+.badge-text {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--clc-champagne);
+}
+
+.interior-main-title {
+    font-family: "Cinzel", serif;
+    font-size: calc(2rem + 1.5vw);
+    font-weight: 400;
+    color: #ffffff;
+    letter-spacing: -0.02em;
+}
+
+.interior-subtitle {
+    color: #94a3b8;
+    font-size: 1.05rem;
+    line-height: 1.65;
+}
+
+.editorial-section-title {
+    font-family: "Cinzel", serif;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+}
+
+.max-content-width {
+    max-width: 1140px;
+}
+
+/* --- Leader Profile Cards --- */
+.leader-profile-card {
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease;
+}
+
+.leader-profile-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(230, 198, 135, 0.2) !important;
+}
+
+.profile-image-placeholder {
+    height: 320px;
+    background-color: #171a21;
+    /* Slightly lighter tone to distinguish image zone */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+.text-dark-slate {
+    color: #2b3542;
+}
+
+.border-dashed {
+    border-style: dashed !important;
+    border-width: 1px !important;
+    border-color: rgba(230, 198, 135, 0.15) !important;
+    background-color: transparent !important;
+}
+
+.placeholder-scrim {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, transparent 60%, rgba(18, 19, 28, 0.85) 100%);
+}
+
+.structural-opacity {
+    opacity: 0.65;
+}
+
+/* --- Upcoming Leaders Layout Details --- */
+.leader-dot-marker {
+    width: 6px;
+    height: 6px;
+    background-color: var(--clc-gold);
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.upcoming-leader-item {
+    padding: 8px 0;
+}
+
+/* --- Layout Padding Helpers --- */
+.py-7 {
+    padding-top: 6rem !important;
+    padding-bottom: 6rem !important;
+}
+
+.mb-7 {
+    margin-bottom: 5.5rem !important;
+}
+
+.z-index-2 {
+    z-index: 2;
+}

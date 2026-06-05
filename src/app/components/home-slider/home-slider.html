@@ -1,0 +1,45 @@
+<div id="premiumHomeSlider" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="7000">
+    <div class="carousel-inner slider-viewport">
+        <div *ngFor="let slide of slides; let isFirst = first" class="carousel-item h-100" [class.active]="isFirst">
+
+            <!-- Luxurious Backdrop Matrix Layer -->
+            <div class="luxury-bg-image" [style.backgroundImage]="'url(' + slide.image + ')'"></div>
+            <div class="luxury-scrim"></div>
+
+            <!-- Content Overlay -->
+            <div class="carousel-caption dynamic-caption d-flex align-items-center h-100 text-center text-lg-start">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-8 col-lg-10 entry-motion-card">
+
+                            <div class="editorial-badge mb-3">
+                                <span class="gold-line"></span>
+                                <span class="badge-text">{{ slide.tag }}</span>
+                            </div>
+
+                            <h1 class="editorial-title mb-3">
+                                {{ slide.heading }} <span class="champagne-italic-text">{{ slide.italicWord }}</span>
+                            </h1>
+
+                            <p class="editorial-prose mb-4 col-lg-10">{{ slide.subtext }}</p>
+
+                            <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3">
+                                <a routerLink="/contact" class="btn btn-premium-gold">Plan Your Journey</a>
+                                <a routerLink="/community-church" class="btn btn-premium-outline">Our Assemblies</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Minimalist Carousel Indicator Bars -->
+    <div class="carousel-indicators premium-indicators">
+        <button *ngFor="let slide of slides; let i = index" type="button" data-bs-target="#premiumHomeSlider"
+            [attr.data-bs-slide-to]="i" [class.active]="i === 0">
+        </button>
+    </div>
+</div>

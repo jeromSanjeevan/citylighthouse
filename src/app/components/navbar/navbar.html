@@ -1,0 +1,61 @@
+<nav class="navbar navbar-expand-xl fixed-top premium-nav-blur border-bottom border-dark-subtle">
+  <div class="container-fluid px-4 px-md-5">
+
+    <!-- Brand Aesthetic Identifier with your Logo Image Asset -->
+    <a class="navbar-brand d-flex align-items-center gap-3" routerLink="/">
+      <div class="brand-branding-lockup d-flex align-items-center gap-2">
+
+        <!-- Updated Logo Container replacing the old icon layer -->
+        <div class="brand-logo-container">
+          <img src="/images/logo/Logo1.png" alt="City Lighthouse Logo" class="nav-logo-asset">
+        </div>
+
+        <div class="d-flex flex-column justify-content-center text-start lh-1">
+          <span class="brand-text font-display">THE <span class="champagne-italic-text">COMMUNITY</span></span>
+          <span class="brand-subtext text-uppercase-tracking">City Lighthouse</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Mobile Menu Trigger Button -->
+    <button class="navbar-toggler border-0 text-white p-2" type="button" data-bs-toggle="collapse"
+      data-bs-target="#churchNavbar" aria-controls="churchNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Structural Navigation Drop Links Grid -->
+    <div class="collapse navbar-collapse" id="churchNavbar">
+      <ul class="navbar-nav mx-auto mb-2 mb-xl-0 gap-1 gap-xl-4 py-3 py-xl-0">
+        <li class="nav-item">
+          <a class="nav-link text-uppercase-tracking" routerLink="/" routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact: true}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-uppercase-tracking" routerLink="/community-church" routerLinkActive="active">Community
+            Church</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-uppercase-tracking" routerLink="/community-embrace"
+            routerLinkActive="active">Community Embrace</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-uppercase-tracking" routerLink="/our-Leadership" routerLinkActive="active">Our
+            Leadership</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-uppercase-tracking" routerLink="/statement-of-faith"
+            routerLinkActive="active">Statement of Faith</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-uppercase-tracking" routerLink="/gallery" routerLinkActive="active">Media Gallery</a>
+        </li>
+      </ul>
+
+      <!-- Primary Intent Action Callout Button -->
+      <div class="d-flex py-2 py-xl-0">
+        <a routerLink="/contact" class="btn btn-nav-cta text-uppercase-tracking w-100 w-xl-auto">Contact Us</a>
+      </div>
+    </div>
+
+  </div>
+</nav>
