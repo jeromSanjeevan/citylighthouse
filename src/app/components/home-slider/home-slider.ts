@@ -19,17 +19,17 @@ export class HomeSlider {
   slides: Slide[] = [
     {
       image: 'images/hero/lighthouse2.png',
-      tag: 'Coventry Independent Pentecostal Ministry',
-      heading: 'One Church. Two Spiritual',
-      italicWord: 'Environments.',
+      tag: 'The Community you need',
+      heading: 'Coventry Tamil ',
+      italicWord: 'Church.',
       subtext: 'A community balancing deliberate biblical corporate spaces with rich, organic neighborhood accountability cells.'
     },
     {
       image: 'images/hero/lighthouse1.jpg',
-      tag: 'Apostolic Foundations & Sincere Worship',
-      heading: 'Uncompromising Truth. Prophetic',
-      italicWord: 'Atmosphere.',
-      subtext: 'Join us every Sunday at 3:00 PM to experience transformational scriptural alignment and real relational warmth.'
+      tag: 'The Community you need',
+      heading: 'Coventry Tamil ',
+      italicWord: 'Church.',
+      subtext: 'A community balancing deliberate biblical corporate spaces with rich, organic neighborhood accountability cells.'
     }
   ];
 }
